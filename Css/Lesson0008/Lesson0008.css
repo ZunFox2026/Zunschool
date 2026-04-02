@@ -1,0 +1,75 @@
+/* Bài 8: Tìm hiểu về Accessibility trong CSS */
+/* Accessibility là tính khả dụng, giúp trang web có thể truy cập được bởi mọi người, 
+   bao gồm cả những người có khả năng hạn chế */
+
+/* 1. Sử dụng màu sắc và độ tương phản */
+/* Để đảm bảo người dùng có thể nhìn rõ nội dung, chúng ta cần sử dụng màu sắc và độ tương phản phù hợp */
+body {
+  /* Thiết lập màu nền và màu chữ */
+  background-color: #f2f2f2; /* màu nền */
+  color: #333; /* màu chữ */
+}
+
+/* 2. Thiết lập kích thước chữ */
+/* Kích thước chữ cần đủ lớn để người dùng có thể đọc dễ dàng */
+h1 {
+  font-size: 24px; /* thiết lập kích thước chữ cho tiêu đề */
+}
+
+/* 3. Sử dụng đơn vị tương đối */
+/* Đơn vị tương đối như em, rem giúp nội dung có thể thay đổi kích thước dựa trên thiết lập của người dùng */
+p {
+  font-size: 1.2em; /* thiết lập kích thước chữ cho đoạn văn */
+}
+
+/* 4. Thiết lập khoảng cách giữa các dòng */
+/* Khoảng cách giữa các dòng cần đủ lớn để người dùng có thể đọc dễ dàng */
+p {
+  line-height: 1.5; /* thiết lập khoảng cách giữa các dòng */
+}
+
+/* 5. Sử dụng hình ảnh có mô tả */
+/* Hình ảnh cần có mô tả để người dùng có thể hiểu nội dung khi hình ảnh không hiển thị */
+img {
+  /* Thiết lập mô tả cho hình ảnh */
+  alt: "Hình ảnh minh họa";
+}
+
+/* 6. Thiết lập tiêu đề cho các phần tử */
+/* Tiêu đề cần được thiết lập cho các phần tử như button, link, input */
+button {
+  /* Thiết lập tiêu đề cho button */
+  cursor: pointer; /* đổi con trỏ chuột khi di chuột qua button */
+}
+
+a {
+  /* Thiết lập tiêu đề cho link */
+  text-decoration: none; /* bỏ gạch chân của link */
+  color: #337ab7; /* đổi màu chữ của link */
+}
+
+input {
+  /* Thiết lập tiêu đề cho input */
+  padding: 10px; /* thêm khoảng cách giữa nội dung và边 của input */
+  border: 1px solid #ccc; /* thêm đường viền cho input */
+}
+
+/* 7. Sử dụng Focus và Hover */
+/* Focus và Hover giúp người dùng có thể nhìn thấy được trạng thái hiện tại của phần tử */
+button:focus {
+  /* Thiết lập trạng thái focus cho button */
+  outline: none; /* bỏ đường viền của button khi focus */
+  box-shadow: 0 0 0 2px #51a7e8; /* thêm bóng cho button khi focus */
+}
+
+a:hover {
+  /* Thiết lập trạng thái hover cho link */
+  color: #23527c; /* đổi màu chữ của link khi hover */
+}
+
+/* 8. Thiết lập ngôn ngữ cho trang web */
+/* Ngôn ngữ cần được thiết lập để người dùng có thể hiểu nội dung */
+html {
+  /* Thiết lập ngôn ngữ cho trang web */
+  lang: "vi"; /* thiết lập ngôn ngữ là tiếng Việt */
+}
