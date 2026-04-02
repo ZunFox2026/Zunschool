@@ -1,50 +1,58 @@
 <!DOCTYPE html>
-<!-- Định nghĩa loại tài liệu HTML5 -->
+<!-- Đây là file HTML demo cho bài CSS: "Tìm hiểu về Media Queries" -->
 <html lang="vi">
-<!-- Ngôn ngữ của tài liệu là tiếng Việt -->
 <head>
-    <!-- Phần đầu của tài liệu, chứa thông tin về tài liệu -->
-    <meta charset="UTF-8">
-    <!-- Quy định bộ ký tự của tài liệu là UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Cài đặt chiều rộng và tỷ lệ ban đầu của trang web trên thiết bị di động -->
+    <!-- Thêm tiêu đề cho trang web -->
     <title>Tìm hiểu về Media Queries</title>
-    <!-- Tiêu đề của trang web -->
+    <!-- Link đến file CSS -->
     <link rel="stylesheet" href="Lesson0014.css">
-    <!-- Liên kết đến file CSS để áp dụng các kiểu dáng cho tài liệu -->
+    <!-- Thêm charset để hiển thị đúng font -->
+    <meta charset="UTF-8">
+    <!-- Thêm viewport để điều chỉnh kích thước trang web trên thiết bị di động -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <!-- Phần thân của tài liệu, chứa nội dung của trang web -->
+    <!-- Thêm header cho trang web -->
     <header>
-        <!-- Phần đầu của trang web, thường chứa thông tin về trang web -->
+        <!-- Thêm tiêu đề cho header -->
         <h1>Tìm hiểu về Media Queries</h1>
-        <!-- Tiêu đề chính của trang web -->
     </header>
+    <!-- Thêm navigation cho trang web -->
     <nav>
-        <!-- Phần điều hướng của trang web, thường chứa các liên kết đến các trang khác -->
+        <!-- Thêm danh sách navigation -->
         <ul>
+            <!-- Thêm các mục navigation -->
             <li><a href="#">Trang chủ</a></li>
             <li><a href="#">Giới thiệu</a></li>
             <li><a href="#">Liên hệ</a></li>
         </ul>
     </nav>
+    <!-- Thêm main content cho trang web -->
     <main>
-        <!-- Phần chính của trang web, chứa nội dung chính của trang web -->
+        <!-- Thêm section cho main content -->
         <section>
-            <!-- Phần của trang web, thường chứa một nhóm nội dung liên quan -->
+            <!-- Thêm tiêu đề cho section -->
             <h2>Giới thiệu về Media Queries</h2>
-            <p>Media Queries là một tính năng của CSS cho phép áp dụng các kiểu dáng khác nhau dựa trên các điều kiện khác nhau, chẳng hạn như chiều rộng và chiều cao của màn hình, thiết bị di động, v.v.</p>
+            <!-- Thêm nội dung cho section -->
+            <p>Media Queries là một công nghệ trong CSS cho phép bạn áp dụng các kiểu dáng khác nhau dựa trên các điều kiện cụ thể như kích thước màn hình, thiết bị, hướng màn hình,...</p>
         </section>
+        <!-- Thêm section cho main content -->
         <section>
+            <!-- Thêm tiêu đề cho section -->
             <h2>Ví dụ về Media Queries</h2>
-            <p>Dưới đây là ví dụ về việc sử dụng Media Queries để thay đổi màu nền của trang web dựa trên chiều rộng của màn hình.</p>
-            <div class="box">Box 1</div>
-            <div class="box">Box 2</div>
-            <div class="box">Box 3</div>
+            <!-- Thêm nội dung cho section -->
+            <p>Dưới đây là một ví dụ về việc sử dụng Media Queries để thay đổi màu nền của trang web dựa trên kích thước màn hình.</p>
+            <!-- Thêm div để kiểm tra Media Queries -->
+            <div class="media-queries-example">Kích thước màn hình: <span id="screen-size"></span></div>
+            <script>
+                // Lấy kích thước màn hình và hiển thị lên trang web
+                document.getElementById("screen-size").innerHTML = window.innerWidth + "x" + window.innerHeight;
+            </script>
         </section>
     </main>
+    <!-- Thêm footer cho trang web -->
     <footer>
-        <!-- Phần chân của trang web, thường chứa thông tin về bản quyền và thông tin liên lạc -->
+        <!-- Thêm thông tin cho footer -->
         <p>&copy; 2024 Tìm hiểu về Media Queries</p>
     </footer>
 </body>
