@@ -1,4 +1,3 @@
-```markdown
 <div align="center">
   <img src="image/zunny.png" alt="Zunny Python" width="180" style="border-radius: 50%; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
   
@@ -171,9 +170,7 @@ Dự án được xây dựng bởi cộng đồng, cho cộng đồng. Bạn c�
 
 MIT © 2026 Zun Technologies – Mã nguồn mở, tự do sử dụng và phát triển.
 
----
 
 <div align="center">
   <sub>Made with ☁️ and 💙 by <strong>Zun Technologies</strong> – where Zunny lives.</sub>
 </div>
-```
