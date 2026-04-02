@@ -1,31 +1,41 @@
-# Tìm chữ cái thường
+# Tìm hiểu về bộ thư viện matplotlib
 ## Giới thiệu
-Bài học này旨在 giúp bạn hiểu cách tìm và xử lý chữ cái thường trong Python. Chữ cái thường là những ký tự được sử dụng để đại diện cho âm thanh hoặc hình dạng trong ngôn ngữ. Trong Python, chúng ta có thể dễ dàng tìm và xử lý chữ cái thường bằng cách sử dụng các phương thức và hàm có sẵn.
+Bộ thư viện matplotlib là một trong những thư viện phổ biến nhất của Python, được sử dụng để tạo ra các biểu đồ, đồ thị và hình ảnh trực quan. Matplotlib cung cấp một cách dễ dàng và linh hoạt để tạo ra các hình ảnh chất lượng cao, giúp người dùng dễ dàng trình bày và phân tích dữ liệu.
+
+Matplotlib được sử dụng rộng rãi trong nhiều lĩnh vực, bao gồm khoa học, kỹ thuật, kinh tế và nhiều lĩnh vực khác. Nó hỗ trợ nhiều loại biểu đồ và đồ thị khác nhau, bao gồm biểu đồ cột, biểu đồ tròn, biểu đồ đường, biểu đồ phân tán và nhiều loại khác.
 
 ## Lý thuyết
-Trong Python, chúng ta có thể sử dụng phương thức `islower()` để kiểm tra xem một ký tự có phải là chữ cái thường hay không. Phương thức này trả về `True` nếu ký tự là chữ cái thường và `False` otherwise.
+Để sử dụng matplotlib, bạn cần hiểu một số khái niệm cơ bản về cách thức hoạt động của nó. Dưới đây là một số khái niệm quan trọng:
 
-Ví dụ:
-- 'a' là chữ cái thường vì nó là một ký tự đại diện cho âm thanh trong ngôn ngữ.
-- 'A' không phải là chữ cái thường vì nó là một ký tự in hoa.
+* **Figure**: Đây là đối tượng chính trong matplotlib, đại diện cho một hình ảnh hoặc biểu đồ.
+* **Axes**: Đây là đối tượng con của Figure, đại diện cho một hệ tọa độ trong hình ảnh.
+* **Plot**: Đây là đối tượng con của Axes, đại diện cho một biểu đồ hoặc đồ thị.
 
-Chúng ta cũng có thể sử dụng hàm `lower()` để chuyển đổi một chuỗi chữ cái thành chữ cái thường.
+Matplotlib cung cấp nhiều hàm và phương thức để tạo ra các biểu đồ và đồ thị, bao gồm `plot()`, `bar()`, `hist()`, `scatter()` và nhiều hàm khác.
 
 ## Ví dụ
-Dưới đây là một số ví dụ minh họa cách tìm và xử lý chữ cái thường trong Python:
-- Kiểm tra xem một ký tự có phải là chữ cái thường hay không:
-  - `print('a'.islower())` sẽ trả về `True`.
-  - `print('A'.islower())` sẽ trả về `False`.
-- Chuyển đổi một chuỗi chữ cái thành chữ cái thường:
-  - `print('ABC'.lower())` sẽ trả về `'abc'`.
-- Tìm tất cả các chữ cái thường trong một chuỗi:
-  - `chuoi = 'Hello World'`
-  - `chu_cai_thuong = [ky_tu for ky_tu in chuoi if ky_tu.islower()]`
-  - `print(chu_cai_thuong)` sẽ trả về `['e', 'l', 'l', 'o', 'o', 'r', 'l', 'd']`.
+Dưới đây là một ví dụ đơn giản về cách sử dụng matplotlib để tạo ra một biểu đồ cột:
+```python
+import matplotlib.pyplot as plt
+
+# Dữ liệu
+danh_sach_so = [1, 2, 3, 4, 5]
+danh_sach_tieu_de = ['A', 'B', 'C', 'D', 'E']
+
+# Tạo biểu đồ
+plt.bar(danh_sach_tieu_de, danh_sach_so)
+plt.xlabel('Tiêu đề')
+plt.ylabel('Số lượng')
+plt.title('Biểu đồ cột')
+plt.show()
+```
+Kết quả sẽ là một biểu đồ cột đơn giản với tiêu đề, nhãn x và nhãn y.
 
 ## Bài tập
-Bài tập này yêu cầu bạn viết một chương trình Python để tìm tất cả các chữ cái thường trong một chuỗi nhập vào từ người dùng.
-- Yêu cầu người dùng nhập vào một chuỗi.
-- Sử dụng phương thức `islower()` để kiểm tra xem mỗi ký tự trong chuỗi có phải là chữ cái thường hay không.
-- In ra tất cả các chữ cái thường tìm thấy trong chuỗi.
-- Chuyển đổi toàn bộ chuỗi thành chữ cái thường và in ra kết quả.
+Bài tập dưới đây sẽ giúp bạn nắm vững kiến thức về matplotlib:
+
+* Tạo một biểu đồ đường với dữ liệu sau: `[1, 2, 3, 4, 5]`
+* Tạo một biểu đồ tròn với dữ liệu sau: `[10, 20, 30, 40]`
+* Tạo một biểu đồ phân tán với dữ liệu sau: `[(1, 2), (2, 3), (3, 4), (4, 5)]`
+
+Hãy thử nghiệm và khám phá các tính năng của matplotlib để tạo ra các biểu đồ và đồ thị khác nhau!
