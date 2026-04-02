@@ -1,0 +1,74 @@
+/* Bài 32: Tạo hình nền */
+/* Phần này sẽ giải thích cách tạo hình nền cho trang web */
+
+/* Tạo hình nền cho toàn bộ trang web */
+body {
+  /* Sử dụng thuộc tính background-color để đặt màu nền */
+  background-color: #f2f2f2;
+  
+  /* Sử dụng thuộc tính background-image để đặt hình nền */
+  background-image: url('hinhnen.jpg');
+  
+  /* Sử dụng thuộc tính background-repeat để đặt chế độ lặp lại hình nền */
+  background-repeat: no-repeat;
+  
+  /* Sử dụng thuộc tính background-size để đặt kích thước hình nền */
+  background-size: cover;
+  
+  /* Sử dụng thuộc tính background-position để đặt vị trí hình nền */
+  background-position: center;
+}
+
+/* Tạo hình nền cho phần header */
+header {
+  /* Sử dụng thuộc tính background-color để đặt màu nền */
+  background-color: #333;
+  
+  /* Sử dụng thuộc tính background-image để đặt hình nền */
+  background-image: url('hinhnenheader.jpg');
+  
+  /* Sử dụng thuộc tính background-repeat để đặt chế độ lặp lại hình nền */
+  background-repeat: repeat-x;
+  
+  /* Sử dụng thuộc tính background-size để đặt kích thước hình nền */
+  background-size: auto;
+  
+  /* Sử dụng thuộc tính background-position để đặt vị trí hình nền */
+  background-position: left top;
+}
+
+/* Tạo hình nền cho phần content */
+.content {
+  /* Sử dụng thuộc tính background-color để đặt màu nền */
+  background-color: #fff;
+  
+  /* Sử dụng thuộc tính background-image để đặt hình nền */
+  background-image: url('hinhnencontent.jpg');
+  
+  /* Sử dụng thuộc tính background-repeat để đặt chế độ lặp lại hình nền */
+  background-repeat: repeat-y;
+  
+  /* Sử dụng thuộc tính background-size để đặt kích thước hình nền */
+  background-size: contain;
+  
+  /* Sử dụng thuộc tính background-position để đặt vị trí hình nền */
+  background-position: right bottom;
+}
+
+/* Tạo hình nền cho phần footer */
+footer {
+  /* Sử dụng thuộc tính background-color để đặt màu nền */
+  background-color: #333;
+  
+  /* Sử dụng thuộc tính background-image để đặt hình nền */
+  background-image: url('hinhnenfooter.jpg');
+  
+  /* Sử dụng thuộc tính background-repeat để đặt chế độ lặp lại hình nền */
+  background-repeat: no-repeat;
+  
+  /* Sử dụng thuộc tính background-size để đặt kích thước hình nền */
+  background-size: 100% 100%;
+  
+  /* Sử dụng thuộc tính background-position để đặt vị trí hình nền */
+  background-position: center;
+}
