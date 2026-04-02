@@ -1,0 +1,58 @@
+/* Bài 2: Tìm hiểu về Media Query */
+/* Media Query là một tính năng trong CSS cho phép áp dụng các kiểu dáng khác nhau dựa trên các điều kiện nhất định của thiết bị hoặc trình duyệt */
+
+/* Ví dụ về việc sử dụng Media Query để thay đổi kiểu dáng dựa trên chiều rộng màn hình */
+@media (max-width: 768px) {
+  /* Khi chiều rộng màn hình nhỏ hơn hoặc bằng 768px, áp dụng các kiểu dáng sau */
+  body {
+    font-size: 14px;
+    background-color: #f2f2f2;
+  }
+  header {
+    height: 50px;
+  }
+}
+
+/* Ví dụ về việc sử dụng Media Query để thay đổi kiểu dáng dựa trên chiều cao màn hình */
+@media (max-height: 600px) {
+  /* Khi chiều cao màn hình nhỏ hơn hoặc bằng 600px, áp dụng các kiểu dáng sau */
+  .container {
+    height: 400px;
+    overflow: auto;
+  }
+}
+
+/* Ví dụ về việc sử dụng Media Query để thay đổi kiểu dáng dựa trên định hướng màn hình */
+@media (orientation: landscape) {
+  /* Khi màn hình ở chế độ ngang, áp dụng các kiểu dáng sau */
+  .sidebar {
+    width: 200px;
+  }
+}
+
+/* Ví dụ về việc sử dụng Media Query để thay đổi kiểu dáng dựa trên độ phân giải màn hình */
+@media (min-resolution: 120dpi) {
+  /* Khi độ phân giải màn hình lớn hơn hoặc bằng 120dpi, áp dụng các kiểu dáng sau */
+  .image {
+    width: 500px;
+    height: 300px;
+  }
+}
+
+/* Ví dụ về việc sử dụng Media Query để thay đổi kiểu dáng dựa trên loại thiết bị */
+@media (pointer: coarse) {
+  /* Khi thiết bị có con trỏ thô (ví dụ: màn hình cảm ứng), áp dụng các kiểu dáng sau */
+  .button {
+    padding: 10px;
+    font-size: 18px;
+  }
+}
+
+/* Ví dụ về việc sử dụng Media Query để thay đổi kiểu dáng dựa trên nhiều điều kiện */
+@media (max-width: 768px) and (orientation: portrait) {
+  /* Khi chiều rộng màn hình nhỏ hơn hoặc bằng 768px và màn hình ở chế độ dọc, áp dụng các kiểu dáng sau */
+  .content {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
