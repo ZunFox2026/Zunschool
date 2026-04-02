@@ -1,0 +1,94 @@
+/* Bài 28: Tìm hiểu về thuộc tính Text */
+/* Phần 1: Thuộc tính text-align */
+/* Thuộc tính text-align dùng để căn chỉnh văn bản */
+.text-align-left {
+  text-align: left;
+}
+.text-align-right {
+  text-align: right;
+}
+.text-align-center {
+  text-align: center;
+}
+.text-align-justify {
+  text-align: justify;
+}
+
+/* Phần 2: Thuộc tính text-decoration */
+/* Thuộc tính text-decoration dùng để thêm các hiệu ứng trang trí cho văn bản */
+.text-decoration-none {
+  text-decoration: none;
+}
+.text-decoration-underline {
+  text-decoration: underline;
+}
+.text-decoration-overline {
+  text-decoration: overline;
+}
+.text-decoration-line-through {
+  text-decoration: line-through;
+}
+
+/* Phần 3: Thuộc tính text-transform */
+/* Thuộc tính text-transform dùng để chuyển đổi văn bản thành chữ hoa hoặc chữ thường */
+.text-transform-uppercase {
+  text-transform: uppercase;
+}
+.text-transform-lowercase {
+  text-transform: lowercase;
+}
+.text-transform-capitalize {
+  text-transform: capitalize;
+}
+
+/* Phần 4: Thuộc tính text-indent */
+/* Thuộc tính text-indent dùng để tạo khoảng cách thụt lề cho dòng văn bản đầu tiên */
+.text-indent-20px {
+  text-indent: 20px;
+}
+
+/* Phần 5: Thuộc tính letter-spacing và word-spacing */
+/* Thuộc tính letter-spacing dùng để tạo khoảng cách giữa các ký tự */
+/* Thuộc tính word-spacing dùng để tạo khoảng cách giữa các từ */
+.letter-spacing-2px {
+  letter-spacing: 2px;
+}
+.word-spacing-5px {
+  word-spacing: 5px;
+}
+
+/* Phần 6: Thuộc tính font-size, font-family, font-style, font-weight */
+/* Thuộc tính font-size dùng để đặt kích thước cho văn bản */
+/* Thuộc tính font-family dùng để đặt kiểu phông chữ cho văn bản */
+/* Thuộc tính font-style dùng để đặt phong cách cho văn bản */
+/* Thuộc tính font-weight dùng để đặt độ nặng cho văn bản */
+.font-size-18px {
+  font-size: 18px;
+}
+.font-family-arial {
+  font-family: Arial, sans-serif;
+}
+.font-style-italic {
+  font-style: italic;
+}
+.font-weight-bold {
+  font-weight: bold;
+}
+
+/* Phần 7: Các ví dụ kết hợp thuộc tính text */
+.example-1 {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+.example-2 {
+  text-indent: 20px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  font-size: 18px;
+  font-style: italic;
+  font-family: Times New Roman, serif;
+}
