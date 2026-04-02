@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Phần này chứa thông tin về trang web -->
+    <title>Tạo hiệu ứng bóng động cho hình ảnh</title>
+    <style>
+        /* Phần này chứa code CSS để tạo hiệu ứng bóng động */
+        .hinh-anh {
+            width: 300px;
+            height: 200px;
+            background-image: url('https://via.placeholder.com/300');
+            background-size: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: box-shadow 0.5s ease-in-out;
+        }
+        
+        .hinh-anh:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <!-- Phần này chứa nội dung của trang web -->
+    <h1 style="color: blue; text-align: center;">Tạo hiệu ứng bóng động cho hình ảnh</h1>
+    <div class="hinh-anh" title="Di chuột vào đây để xem hiệu ứng bóng động"></div>
+    <!-- Khi di chuột vào hình ảnh, bóng động sẽ được tạo ra -->
+</body>
+</html>
