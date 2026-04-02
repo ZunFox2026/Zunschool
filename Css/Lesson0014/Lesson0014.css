@@ -1,61 +1,62 @@
-/* Bài 14: Tìm hiểu về Media Queries */
-/* Media Queries được sử dụng để áp dụng các kiểu CSS khác nhau dựa trên thuộc tính của thiết bị hiển thị */
+/* Bài 14: Tạo hình nền động */
+/* Phần 1: Định nghĩa các lớp cho hình nền động */
+.hinh-nen-dong {
+  /* Sử dụng thuộc tính background để thiết lập hình nền */
+  background-image: linear-gradient(to right, #ff69b4, #ffe6cc);
+  /* Thiết lập chiều cao và chiều rộng cho hình nền */
+  height: 100vh;
+  width: 100vw;
+  /* Sử dụng thuộc tính animation để tạo hiệu ứng động */
+  animation: hinh-nen-dong 10s infinite;
+}
 
-/* Ví dụ về Media Queries cho các độ phân giải màn hình khác nhau */
-@media only screen and (max-width: 600px) {
-  /* Đối với màn hình có độ phân giải tối đa 600px */
-  body {
-    background-color: #f2f2f2; /* Màu nền */
-    font-size: 14px; /* Cỡ chữ */
+/* Phần 2: Định nghĩa hiệu ứng động cho hình nền */
+@keyframes hinh-nen-dong {
+  /* Khởi tạo hiệu ứng tại 0% */
+  0% {
+    background-image: linear-gradient(to right, #ff69b4, #ffe6cc);
+  }
+  /* Thay đổi hiệu ứng tại 50% */
+  50% {
+    background-image: linear-gradient(to right, #ffe6cc, #ff69b4);
+  }
+  /* Kết thúc hiệu ứng tại 100% */
+  100% {
+    background-image: linear-gradient(to right, #ff69b4, #ffe6cc);
   }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1200px) {
-  /* Đối với màn hình có độ phân giải từ 601px đến 1200px */
-  body {
-    background-color: #ccc; /* Màu nền */
-    font-size: 16px; /* Cỡ chữ */
+/* Phần 3: Thêm hiệu ứng động cho các phần tử khác */
+.hinh-nen-dong-2 {
+  background-image: radial-gradient(#ff69b4, #ffe6cc);
+  height: 100vh;
+  width: 100vw;
+  animation: hinh-nen-dong-2 15s infinite;
+}
+
+@keyframes hinh-nen-dong-2 {
+  0% {
+    background-image: radial-gradient(#ff69b4, #ffe6cc);
+  }
+  50% {
+    background-image: radial-gradient(#ffe6cc, #ff69b4);
+  }
+  100% {
+    background-image: radial-gradient(#ff69b4, #ffe6cc);
   }
 }
 
-@media only screen and (min-width: 1201px) {
-  /* Đối với màn hình có độ phân giải từ 1201px trở lên */
-  body {
-    background-color: #fff; /* Màu nền */
-    font-size: 18px; /* Cỡ chữ */
-  }
+/* Phần 4: Thêm selector và property cho các phần tử khác */
+#noi-dung {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 20vh;
 }
 
-/* Ví dụ về Media Queries cho các thiết bị di động */
-@media only screen and (max-width: 768px) {
-  /* Đối với thiết bị di động có độ phân giải tối đa 768px */
-  .container {
-    width: 100%; /* Chiều rộng */
-    padding: 20px; /* Khoảng cách trong */
-  }
-}
-
-/* Ví dụ về Media Queries cho các thiết bị in */
-@media print {
-  /* Đối với thiết bị in */
-  .header, .footer {
-    display: none; /* Ẩn các phần tử */
-  }
-}
-
-/* Ví dụ về Media Queries cho các hướng màn hình khác nhau */
-@media only screen and (orientation: portrait) {
-  /* Đối với màn hình có hướng dọc */
-  .content {
-    width: 80%; /* Chiều rộng */
-    margin: 0 auto; /* Căn giữa */
-  }
-}
-
-@media only screen and (orientation: landscape) {
-  /* Đối với màn hình có hướng ngang */
-  .content {
-    width: 60%; /* Chiều rộng */
-    margin: 0 auto; /* Căn giữa */
-  }
+#noi-dung-2 {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 40vh;
 }
