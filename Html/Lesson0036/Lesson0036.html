@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Đây là khai báo loại tài liệu HTML5 -->
+<html>
+<!-- Phần thân của tài liệu HTML -->
+<head>
+    <!-- Phần đầu của tài liệu HTML, chứa thông tin về trang web -->
+    <title>Tạo hiệu ứng loading</title>
+    <!-- Tiêu đề của trang web -->
+    <style>
+        /* CSS để tạo hiệu ứng loading */
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* Đặt hiệu ứng loading ở giữa trang */
+            width: 50px;
+            height: 50px;
+            border: 8px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 8px solid #3498db;
+            /* Tạo hình tròn loading */
+            animation: spin 2s linear infinite;
+            /* Tạo hiệu ứng quay */
+        }
+        @keyframes spin {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+        /* Tạo hiệu ứng quay cho hình tròn loading */
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-color: #f0f0f0;
+            /* Tạo nền cho trang web */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Đặt hiệu ứng loading ở giữa trang */
+        }
+    </style>
+</head>
+<body>
+    <!-- Phần nội dung của trang web -->
+    <div class="container">
+        <!-- Tạo container để chứa hiệu ứng loading -->
+        <div class="loading">
+            <!-- Hiệu ứng loading -->
+        </div>
+    </div>
+</body>
+</html>
