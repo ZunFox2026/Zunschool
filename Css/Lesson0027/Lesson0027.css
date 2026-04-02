@@ -1,0 +1,58 @@
+/* Bài 27: Tìm hiểu về Media Queries */
+/* Media Queries cho phép áp dụng các kiểu dáng khác nhau dựa trên các điều kiện cụ thể của thiết bị hoặc trình duyệt */
+
+/* Ví dụ 1: Áp dụng kiểu dáng cho màn hình có chiều rộng từ 768px trở lên */
+@media (min-width: 768px) {
+  /* Thay đổi font size và màu sắc cho đoạn văn */
+  p {
+    font-size: 18px;
+    color: #00698f;
+  }
+}
+
+/* Ví dụ 2: Áp dụng kiểu dáng cho màn hình có chiều rộng từ 480px đến 767px */
+@media (max-width: 767px) and (min-width: 480px) {
+  /* Thay đổi kích thước và vị trí của hình ảnh */
+  img {
+    width: 50%;
+    margin: 20px auto;
+  }
+}
+
+/* Ví dụ 3: Áp dụng kiểu dáng cho màn hình có chiều rộng nhỏ hơn 480px */
+@media (max-width: 479px) {
+  /* Thay đổi font size và màu sắc cho tiêu đề */
+  h1 {
+    font-size: 16px;
+    color: #ff9900;
+  }
+}
+
+/* Ví dụ 4: Áp dụng kiểu dáng cho thiết bị di động */
+@media only screen and (max-width: 767px) {
+  /* Thay đổi bố cục và khoảng cách giữa các phần tử */
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+/* Ví dụ 5: Áp dụng kiểu dáng cho thiết bị in */
+@media print {
+  /* Thay đổi màu sắc và font size cho văn bản */
+  body {
+    color: #000;
+    font-size: 12pt;
+  }
+}
+
+/* Ví dụ 6: Áp dụng kiểu dáng cho màn hình có tỷ lệ khung hình 16:9 */
+@media (min-aspect-ratio: 16/9) {
+  /* Thay đổi kích thước và vị trí của video */
+  video {
+    width: 80%;
+    height: 60vh;
+    margin: 40px auto;
+  }
+}
