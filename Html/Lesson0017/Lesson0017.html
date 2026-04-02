@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Đây là khai báo tài liệu HTML5 -->
+<html>
+<!-- Phần head chứa thông tin về trang web -->
+<head>
+    <!-- Thẻ title chứa tiêu đề của trang web -->
+    <title>Tạo hiệu ứng Scrollbar tùy chỉnh</title>
+    <!-- Thẻ style chứa mã CSS để tạo kiểu cho trang web -->
+    <style>
+        /* Tạo hiệu ứng scrollbar tùy chỉnh */
+        /* Bộ chọn toàn bộ scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px; /* Chiều rộng của scrollbar */
+            height: 10px; /* Chiều cao của scrollbar */
+        }
+        
+        /* Bộ chọn thanh scrollbar */
+        ::-webkit-scrollbar-thumb {
+            background-color: #007bff; /* Màu nền của thanh scrollbar */
+            border-radius: 10px; /* Bán kính góc của thanh scrollbar */
+        }
+        
+        /* Bộ chọn vùng trống của scrollbar */
+        ::-webkit-scrollbar-track {
+            background-color: #f0f0f0; /* Màu nền của vùng trống scrollbar */
+            border-radius: 10px; /* Bán kính góc của vùng trống scrollbar */
+        }
+        
+        /* Tạo phong cách cho phần nội dung */
+        body {
+            font-family: Arial, sans-serif; /* Font chữ cho phần nội dung */
+            padding: 20px; /* Khoảng cách giữa nội dung và scrollbar */
+        }
+        
+        /* Tạo một vùng chứa để minh họa hiệu ứng scrollbar */
+        .container {
+            height: 500px; /* Chiều cao của vùng chứa */
+            overflow-y: auto; /* Tạo scrollbar khi nội dung quá dài */
+            background-color: #fff; /* Màu nền của vùng chứa */
+            padding: 20px; /* Khoảng cách giữa nội dung và scrollbar */
+            border: 1px solid #ddd; /* Đường viền của vùng chứa */
+            border-radius: 10px; /* Bán kính góc của vùng chứa */
+        }
+    </style>
+</head>
+<!-- Phần body chứa nội dung của trang web -->
+<body>
+    <!-- Tạo một vùng chứa để minh họa hiệu ứng scrollbar -->
+    <div class="container">
+        <!-- Thêm nội dung để minh họa hiệu ứng scrollbar -->
+        <h1>Tạo hiệu ứng Scrollbar tùy chỉnh</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</body>
+</html>
