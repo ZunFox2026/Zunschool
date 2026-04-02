@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Thông tin về trang web -->
+    <title>Tạo hiệu ứng Loading</title>
+    <style>
+        /* Định dạng chung cho trang web */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        
+        /* Tạo hiệu ứng loading */
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+            border: 10px solid #ccc;
+            border-top: 10px solid #00698f;
+            border-radius: 50%;
+            animation: loading 2s linear infinite;
+        }
+        
+        /* Hiệu ứng quay tròn cho loading */
+        @keyframes loading {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+        
+        /* Thông tin về hiệu ứng loading */
+        .info {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: #00698f;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hiển thị hiệu ứng loading -->
+    <div class="loading"></div>
+    <!-- Thông tin về hiệu ứng loading -->
+    <div class="info">Đang tải...</div>
+</body>
+</html>
