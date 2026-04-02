@@ -1,0 +1,1 @@
+Bạn có thể cho mình biết nội dung cụ thể của bài toán (bài 6, cấp Cơ bản) cần giải là gì吗? Khi biết đề bài cụ thể, tôi sẽ viết file Python đầy đủ comment tiếng Việt và có hàm `main` hoặc khối `if __name__ == "__main__":` như bạn yêu cầu.
