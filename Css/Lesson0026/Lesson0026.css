@@ -1,0 +1,80 @@
+/* Bài 26: Tìm hiểu về Media Queries */
+/* Media Queries giúp chúng ta áp dụng các style khác nhau dựa trên các điều kiện nhất định */
+
+/* Ví dụ 1: Áp dụng style khi chiều rộng màn hình nhỏ hơn 768px */
+@media (max-width: 768px) {
+  /* Thay đổi màu nền khi chiều rộng màn hình nhỏ hơn 768px */
+  body {
+    background-color: #f2f2f2;
+  }
+  
+  /* Thay đổi kích thước font khi chiều rộng màn hình nhỏ hơn 768px */
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/* Ví dụ 2: Áp dụng style khi chiều rộng màn hình nằm trong khoảng từ 768px đến 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Thay đổi màu nền khi chiều rộng màn hình nằm trong khoảng từ 768px đến 1024px */
+  body {
+    background-color: #ccc;
+  }
+  
+  /* Thay đổi kích thước font khi chiều rộng màn hình nằm trong khoảng từ 768px đến 1024px */
+  h2 {
+    font-size: 18px;
+  }
+}
+
+/* Ví dụ 3: Áp dụng style khi chiều rộng màn hình lớn hơn 1024px */
+@media (min-width: 1024px) {
+  /* Thay đổi màu nền khi chiều rộng màn hình lớn hơn 1024px */
+  body {
+    background-color: #fff;
+  }
+  
+  /* Thay đổi kích thước font khi chiều rộng màn hình lớn hơn 1024px */
+  h3 {
+    font-size: 20px;
+  }
+}
+
+/* Ví dụ 4: Áp dụng style khi chiều cao màn hình nhỏ hơn 600px */
+@media (max-height: 600px) {
+  /* Thay đổi màu nền khi chiều cao màn hình nhỏ hơn 600px */
+  body {
+    background-color: #eee;
+  }
+  
+  /* Thay đổi kích thước font khi chiều cao màn hình nhỏ hơn 600px */
+  p {
+    font-size: 14px;
+  }
+}
+
+/* Ví dụ 5: Áp dụng style khi thiết bị được sử dụng là máy in */
+@media print {
+  /* Thay đổi màu nền khi in */
+  body {
+    background-color: #fff;
+  }
+  
+  /* Thay đổi kích thước font khi in */
+  h1 {
+    font-size: 30px;
+  }
+}
+
+/* Ví dụ 6: Áp dụng style khi thiết bị được sử dụng là màn hình */
+@media screen {
+  /* Thay đổi màu nền khi hiển thị trên màn hình */
+  body {
+    background-color: #f2f2f2;
+  }
+  
+  /* Thay đổi kích thước font khi hiển thị trên màn hình */
+  h2 {
+    font-size: 24px;
+  }
+}
