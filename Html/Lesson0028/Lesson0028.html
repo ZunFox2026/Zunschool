@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!-- Định nghĩa tiêu đề và bộ ký tự của trang web -->
+    <title>Tạo hiệu ứng Scrollbar tùy chỉnh</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Thêm phong cách CSS cho trang web -->
+    <style>
+        /* Định nghĩa phong cách cho body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        
+        /* Định nghĩa phong cách cho phần nội dung */
+        .content {
+            width: 80%;
+            height: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow-y: scroll; /* Tạo thanh cuộn dọc */
+        }
+        
+        /* Định nghĩa phong cách cho thanh cuộn */
+        .content::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+        
+        /* Định nghĩa phong cách cho thanh cuộn khi di chuột vào */
+        .content::-webkit-scrollbar:hover {
+            background-color: #ccc;
+        }
+        
+        /* Định nghĩa phong cách cho thanh cuộn khi click chuột vào */
+        .content::-webkit-scrollbar:active {
+            background-color: #aaa;
+        }
+        
+        /* Định nghĩa phong cách cho phần track của thanh cuộn */
+        .content::-webkit-scrollbar-track {
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        
+        /* Định nghĩa phong cách cho phần thumb của thanh cuộn */
+        .content::-webkit-scrollbar-thumb {
+            background-color: #4CAF50;
+            border-radius: 5px;
+        }
+        
+        /* Định nghĩa phong cách cho phần thumb của thanh cuộn khi di chuột vào */
+        .content::-webkit-scrollbar-thumb:hover {
+            background-color: #3e8e41;
+        }
+        
+        /* Định nghĩa phong cách cho phần thumb của thanh cuộn khi click chuột vào */
+        .content::-webkit-scrollbar-thumb:active {
+            background-color: #2f6f31;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tạo phần nội dung có thanh cuộn -->
+    <div class="content">
+        <!-- Thêm nội dung để có thể cuộn -->
+        <h1>Tạo hiệu ứng Scrollbar tùy chỉnh</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    </div>
+</body>
+</html>
