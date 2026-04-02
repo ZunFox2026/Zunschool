@@ -1,0 +1,76 @@
+/* Bài 4: Tìm hiểu về thuộc tính Overflow */
+/* Phần 1: Giới thiệu về thuộc tính Overflow */
+/* Thuộc tính Overflow dùng để chỉ định cách xử lý khi nội dung của một phần tử vượt quá kích thước của nó */
+
+overflow: visible; /* Mặc định, nội dung sẽ vượt quá ra ngoài */
+overflow: hidden; /* Nội dung sẽ bị cắt bỏ khi vượt quá kích thước */
+overflow: scroll; /* Sẽ thêm thanh cuộn khi nội dung vượt quá kích thước */
+overflow: auto; /* Tương tự scroll, nhưng chỉ thêm thanh cuộn khi cần thiết */
+
+/* Phần 2: Ví dụ về thuộc tính Overflow */
+#example1 {
+  /* Ví dụ về overflow: visible */
+  width: 200px;
+  height: 100px;
+  background-color: #f0f0f0;
+  overflow: visible;
+}
+
+#example2 {
+  /* Ví dụ về overflow: hidden */
+  width: 200px;
+  height: 100px;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+#example3 {
+  /* Ví dụ về overflow: scroll */
+  width: 200px;
+  height: 100px;
+  background-color: #f0f0f0;
+  overflow: scroll;
+}
+
+#example4 {
+  /* Ví dụ về overflow: auto */
+  width: 200px;
+  height: 100px;
+  background-color: #f0f0f0;
+  overflow: auto;
+}
+
+/* Phần 3: Ví dụ về thuộc tính Overflow-x và Overflow-y */
+#example5 {
+  /* Ví dụ về overflow-x và overflow-y */
+  width: 200px;
+  height: 100px;
+  background-color: #f0f0f0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#example6 {
+  /* Ví dụ về overflow-x và overflow-y */
+  width: 200px;
+  height: 100px;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* Phần 4: Ví dụ về thuộc tính Overflow trên các phần tử khác nhau */
+div {
+  /* Áp dụng thuộc tính Overflow cho tất cả các phần tử div */
+  overflow: auto;
+}
+
+p {
+  /* Áp dụng thuộc tính Overflow cho tất cả các phần tử p */
+  overflow: hidden;
+}
+
+img {
+  /* Áp dụng thuộc tính Overflow cho tất cả các phần tử img */
+  overflow: visible;
+}
