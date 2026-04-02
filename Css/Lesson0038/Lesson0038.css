@@ -1,0 +1,13 @@
+/* Bài 38: Bài 38: CSS Cơ bản */
+/* Học CSS cùng Zunny 🦊 */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  color: #6c63ff;
+}
