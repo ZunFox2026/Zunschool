@@ -1,0 +1,74 @@
+/* Bài 33: Tạo hình nền động */
+/* Tạo hình nền động bằng cách sử dụng thuộc tính background và animation */
+
+/* Phần 1: Tạo hình nền động bằng cách sử dụng thuộc tính background */
+body {
+  /* Thiết lập hình nền động */
+  background-image: linear-gradient(to right, #ff69b4, #ffe6cc);
+  /* Thiết lập độ rộng và độ cao của hình nền */
+  background-size: 100% 100%;
+  /* Thiết lập hướng của hình nền */
+  background-position: center;
+  /* Thiết lập thời gian chuyển động của hình nền */
+  animation: hue 10s infinite;
+}
+
+/* Phần 2: Tạo hiệu ứng chuyển động cho hình nền */
+@keyframes hue {
+  /* Thiết lập màu sắc ban đầu của hình nền */
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  /* Thiết lập màu sắc cuối cùng của hình nền */
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* Phần 3: Tạo hình nền động bằng cách sử dụng thuộc tính background và gradient */
+.div1 {
+  /* Thiết lập hình nền động bằng cách sử dụng gradient */
+  background-image: linear-gradient(to right, #ff69b4, #ffe6cc, #ffffcc);
+  /* Thiết lập độ rộng và độ cao của hình nền */
+  background-size: 100% 100%;
+  /* Thiết lập hướng của hình nền */
+  background-position: center;
+  /* Thiết lập thời gian chuyển động của hình nền */
+  animation: gradient 10s infinite;
+}
+
+/* Phần 4: Tạo hiệu ứng chuyển động cho hình nền bằng cách sử dụng thuộc tính animation */
+@keyframes gradient {
+  /* Thiết lập màu sắc ban đầu của hình nền */
+  0% {
+    background-image: linear-gradient(to right, #ff69b4, #ffe6cc, #ffffcc);
+  }
+  /* Thiết lập màu sắc cuối cùng của hình nền */
+  100% {
+    background-image: linear-gradient(to right, #ffffcc, #ffe6cc, #ff69b4);
+  }
+}
+
+/* Phần 5: Tạo hình nền động bằng cách sử dụng thuộc tính background và radial-gradient */
+.div2 {
+  /* Thiết lập hình nền động bằng cách sử dụng radial-gradient */
+  background-image: radial-gradient(circle, #ff69b4, #ffe6cc, #ffffcc);
+  /* Thiết lập độ rộng và độ cao của hình nền */
+  background-size: 100% 100%;
+  /* Thiết lập hướng của hình nền */
+  background-position: center;
+  /* Thiết lập thời gian chuyển động của hình nền */
+  animation: radial 10s infinite;
+}
+
+/* Phần 6: Tạo hiệu ứng chuyển động cho hình nền bằng cách sử dụng thuộc tính animation */
+@keyframes radial {
+  /* Thiết lập màu sắc ban đầu của hình nền */
+  0% {
+    background-image: radial-gradient(circle, #ff69b4, #ffe6cc, #ffffcc);
+  }
+  /* Thiết lập màu sắc cuối cùng của hình nền */
+  100% {
+    background-image: radial-gradient(circle, #ffffcc, #ffe6cc, #ff69b4);
+  }
+}
