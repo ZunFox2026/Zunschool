@@ -1,0 +1,78 @@
+/* Bài 37: Tìm hiểu về Web Storage */
+/* Phần này sẽ tạo kiểu cho trang web về chủ đề Web Storage */
+
+/* Tạo kiểu cho tiêu đề */
+h1 {
+  color: #00698f; /* Màu xanh lá cây */
+  text-align: center; /* Căn giữa */
+  font-size: 36px; /* Kích thước chữ */
+  margin-bottom: 20px; /* Khoảng cách giữa tiêu đề và nội dung */
+}
+
+/* Tạo kiểu cho nội dung */
+p {
+  font-size: 18px; /* Kích thước chữ */
+  line-height: 1.5; /* Khoảng cách giữa các dòng */
+  color: #333; /* Màu đen */
+  margin-bottom: 20px; /* Khoảng cách giữa các đoạn */
+}
+
+/* Tạo kiểu cho ví dụ về Web Storage */
+.web-storage-example {
+  background-color: #f9f9f9; /* Màu nền */
+  padding: 20px; /* Khoảng cách giữa nội dung và biên */
+  border: 1px solid #ddd; /* Đường viền */
+  border-radius: 10px; /* Bo góc */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ánh bóng */
+}
+
+/* Tạo kiểu cho tiêu đề ví dụ */
+.web-storage-example h2 {
+  color: #00698f; /* Màu xanh lá cây */
+  font-size: 24px; /* Kích thước chữ */
+  margin-bottom: 10px; /* Khoảng cách giữa tiêu đề và nội dung */
+}
+
+/* Tạo kiểu cho mã ví dụ */
+.web-storage-example code {
+  font-size: 16px; /* Kích thước chữ */
+  color: #666; /* Màu xám */
+  background-color: #f0f0f0; /* Màu nền */
+  padding: 5px; /* Khoảng cách giữa nội dung và biên */
+  border: 1px solid #ccc; /* Đường viền */
+}
+
+/* Tạo kiểu cho nút bấm */
+button {
+  background-color: #00698f; /* Màu xanh lá cây */
+  color: #fff; /* Màu trắng */
+  padding: 10px 20px; /* Khoảng cách giữa nội dung và biên */
+  border: none; /* Không có đường viền */
+  border-radius: 5px; /* Bo góc */
+  cursor: pointer; /* Con trỏ chuột */
+}
+
+/* Tạo kiểu cho nút bấm khi di chuột */
+button:hover {
+  background-color: #004d6f; /* Màu xanh lá cây đậm */
+}
+
+/* Tạo kiểu cho footer */
+footer {
+  background-color: #333; /* Màu đen */
+  color: #fff; /* Màu trắng */
+  padding: 10px; /* Khoảng cách giữa nội dung và biên */
+  text-align: center; /* Căn giữa */
+  clear: both; /* Dọn dẹp float */
+}
+
+/* Tạo kiểu cho liên kết */
+a {
+  text-decoration: none; /* Không có gạch chân */
+  color: #00698f; /* Màu xanh lá cây */
+}
+
+/* Tạo kiểu cho liên kết khi di chuột */
+a:hover {
+  color: #004d6f; /* Màu xanh lá cây đậm */
+}
