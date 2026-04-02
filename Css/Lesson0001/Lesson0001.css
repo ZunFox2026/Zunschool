@@ -1,0 +1,48 @@
+/* Bài 1: Tìm hiểu về Units trong CSS */
+/* Units trong CSS dùng để đo lường kích thước của các phần tử */
+
+/* Sử dụng đơn vị px (pixel) */
+.selector-1 {
+  /* Ví dụ về sử dụng đơn vị px */
+  width: 500px; /* Chiều rộng của phần tử */
+  height: 200px; /* Chiều cao của phần tử */
+  font-size: 18px; /* Cỡ chữ của phần tử */
+}
+
+/* Sử dụng đơn vị % (phần trăm) */
+.selector-2 {
+  /* Ví dụ về sử dụng đơn vị % */
+  width: 50%; /* Chiều rộng của phần tử là 50% so với chiều rộng của phần tử cha */
+  height: 25%; /* Chiều cao của phần tử là 25% so với chiều cao của phần tử cha */
+  padding: 10%; /* Khoảng cách giữa nội dung và biên giới của phần tử là 10% */
+}
+
+/* Sử dụng đơn vị em */
+.selector-3 {
+  /* Ví dụ về sử dụng đơn vị em */
+  font-size: 1.5em; /* Cỡ chữ của phần tử là 1.5 lần cỡ chữ của phần tử cha */
+  margin: 0.5em; /* Khoảng cách giữa phần tử và phần tử khác là 0.5 lần cỡ chữ của phần tử */
+}
+
+/* Sử dụng đơn vị rem */
+.selector-4 {
+  /* Ví dụ về sử dụng đơn vị rem */
+  font-size: 1.2rem; /* Cỡ chữ của phần tử là 1.2 lần cỡ chữ của phần tử root */
+  padding: 0.8rem; /* Khoảng cách giữa nội dung và biên giới của phần tử là 0.8 lần cỡ chữ của phần tử root */
+}
+
+/* Sử dụng đơn vị vw và vh */
+.selector-5 {
+  /* Ví dụ về sử dụng đơn vị vw và vh */
+  width: 80vw; /* Chiều rộng của phần tử là 80% so với chiều rộng của viewport */
+  height: 60vh; /* Chiều cao của phần tử là 60% so với chiều cao của viewport */
+}
+
+/* Sử dụng đơn vị cm, mm, in, pt, pc */
+.selector-6 {
+  /* Ví dụ về sử dụng đơn vị cm, mm, in, pt, pc */
+  width: 10cm; /* Chiều rộng của phần tử là 10 cm */
+  height: 5mm; /* Chiều cao của phần tử là 5 mm */
+  font-size: 12pt; /* Cỡ chữ của phần tử là 12 điểm */
+  margin: 1pc; /* Khoảng cách giữa phần tử và phần tử khác là 1 pica */
+}
