@@ -1,1 +1,0 @@
-Bạn có thể cho tôi biết cụ thể bài toán “bài 1, cấp Cơ bản” yêu cầu gì là gì? Ví dụ: nhập/số liệu gì, cần tính toán gì, đầu ra mong đợi như thế nào… Sau khi biết chi tiết tôi sẽ viết file .py đầy đủ, có comment tiếng Việt và hàm `main` hoặc `if __name__ == "__main__"` như bạn yêu cầu.

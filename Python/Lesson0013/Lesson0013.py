@@ -1,1 +1,0 @@
-Bạn có thể cho tôi biết cụ thể bài toán “bài 13, cấp Cơ bản” yêu cầu gì vậy? Như vậy tôi mới có thể viết mã Python đúng selon đề bài, kèm chú thích tiếng Việt và có hàm `main` hoặc khối `if __name__ == "__main__":`.

@@ -1,1 +1,0 @@
-Bạn có thể cho tôi biết chính xác đề bài của “bài 7, cấp Cơ bản” là gì không? Khi biết rõ yêu cầu của bài tập, tôi sẽ viết file .py hoàn chỉnh, có comment bằng tiếng Việt và có hàm `main` (hoặc `if __name__ == "__main__"`) để bạn có thể chạy ngay.
