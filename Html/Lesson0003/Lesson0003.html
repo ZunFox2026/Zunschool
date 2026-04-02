@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- Đây là khai báo loại tài liệu, thông báo cho trình duyệt rằng đây là một trang web sử dụng HTML5 -->
+<html>
+<!-- Thẻ html là thẻ gốc của tài liệu HTML -->
+<head>
+    <!-- Thẻ head chứa thông tin về trang web, bao gồm tiêu đề, phong cách, tập lệnh, v.v. -->
+    <title>Tạo Form Đăng Ký</title>
+    <!-- Thẻ title đặt tiêu đề cho trang web -->
+    <style>
+        /* CSS viết trong thẻ style để định dạng trang web */
+        body {
+            /* Định dạng body của trang web */
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        
+        .container {
+            /* Định dạng container để chứa form đăng ký */
+            width: 50%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            /* Định dạng tiêu đề của form đăng ký */
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .form-group {
+            /* Định dạng nhóm form */
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            /* Định dạng nhãn của nhóm form */
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .form-group input {
+            /* Định dạng trường nhập của nhóm form */
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .form-group input[type="submit"] {
+            /* Định dạng nút submit của nhóm form */
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .form-group input[type="submit"]:hover {
+            /* Định dạng nút submit khi di chuột vào */
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <!-- Thẻ body chứa nội dung của trang web -->
+    <div class="container">
+        <!-- Thẻ div để chứa form đăng ký -->
+        <div class="header">
+            <!-- Thẻ div để chứa tiêu đề của form đăng ký -->
+            <h2>Đăng Ký</h2>
+        </div>
+        <form>
+            <!-- Thẻ form để chứa các trường nhập và nút submit -->
+            <div class="form-group">
+                <!-- Thẻ div để chứa nhóm form -->
+                <label for="ten">Tên:</label>
+                <input type="text" id="ten" name="ten" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="matkhau">Mật khẩu:</label>
+                <input type="password" id="matkhau" name="matkhau" required>
+            </div>
+            <div class="form-group">
+                <label for="nhaplaimatkhau">Nhập lại mật khẩu:</label>
+                <input type="password" id="nhaplaimatkhau" name="nhaplaimatkhau" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Đăng Ký">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
