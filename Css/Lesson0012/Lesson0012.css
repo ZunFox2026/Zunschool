@@ -1,0 +1,69 @@
+/* Bài 12: Tạo hình nền động */
+/* Phần 1: Thiết lập hình nền động cho trang web */
+body {
+  /* Sử dụng thuộc tính background để thiết lập hình nền */
+  background: linear-gradient(to bottom, #f1f1f1, #ccc);
+  /* Thêm hiệu ứng chuyển động cho hình nền */
+  background-size: 100% 300%;
+  animation: animate 10s ease-in-out infinite;
+}
+
+/* Phần 2: Tạo hiệu ứng chuyển động cho hình nền */
+@keyframes animate {
+  /* Xác định các điểm dừng trong hiệu ứng chuyển động */
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Phần 3: Thêm hình nền động cho các phần tử khác */
+.header {
+  /* Sử dụng thuộc tính background để thiết lập hình nền */
+  background: url('hinhnen.jpg') no-repeat;
+  /* Thêm hiệu ứng chuyển động cho hình nền */
+  background-size: cover;
+  animation: animate-header 5s ease-in-out infinite;
+}
+
+/* Phần 4: Tạo hiệu ứng chuyển động cho hình nền của phần tử .header */
+@keyframes animate-header {
+  /* Xác định các điểm dừng trong hiệu ứng chuyển động */
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Phần 5: Thêm hình nền động cho các phần tử con */
+.item {
+  /* Sử dụng thuộc tính background để thiết lập hình nền */
+  background: linear-gradient(to right, #f1f1f1, #ccc);
+  /* Thêm hiệu ứng chuyển động cho hình nền */
+  background-size: 100% 100%;
+  animation: animate-item 5s ease-in-out infinite;
+}
+
+/* Phần 6: Tạo hiệu ứng chuyển động cho hình nền của phần tử .item */
+@keyframes animate-item {
+  /* Xác định các điểm dừng trong hiệu ứng chuyển động */
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
